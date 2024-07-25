@@ -5,6 +5,10 @@
 classDiagram
     class User {
         +String name
+        +Account[] account
+        +Feature[] features
+        +Card[] card
+        +News[] news
     }
     class Account {
         +String number
@@ -29,4 +33,5 @@ classDiagram
     User --> "1..*" Feature
     User --> "1..*" Card
     User --> "1..*" News
+
 ```
